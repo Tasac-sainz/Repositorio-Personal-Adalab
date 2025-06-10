@@ -1,0 +1,20 @@
+/* Restablecer márgenes y padding para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Restablecer los estilos predeterminados para el cuerpo */
+body {
+  font-family: sans-serif;
+}
+
+/* Restablecer los estilos predeterminados para las listas */
+ul {
+  list-style: none;
+}
+
+/* Restablecer los estilos predeterminados para los enlaces */
+a {
+  text-decoration: none;
+}
