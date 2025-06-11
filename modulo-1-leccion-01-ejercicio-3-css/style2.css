@@ -1,0 +1,46 @@
+body {
+    color: rgb(126, 180, 227);
+    background-image: url(./assets/desarrollo.jpg);
+    margin: 30pt;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.first {
+    width: 50%;
+    padding: 5px;
+    border: 5px solid saddlebrown;
+    border-radius: 5%;
+    background-color: aliceblue;
+    color: black;
+}
+
+.images {
+ 
+    margin: 30pt;
+    padding: 5pt; 
+    flex-direction: row;
+}
+
+.htmlpic {
+    width: 300px;
+    height: auto;
+    margin: 30pt;
+    border: 5px solid saddlebrown; 
+}
+
+.langlist {
+    width: 400px;
+    padding: 5px;
+    border: 5px solid saddlebrown;
+    border-radius: 5%;
+    background-color: aliceblue;
+    color: black;
+    list-style-type:none;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
