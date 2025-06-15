@@ -8,9 +8,13 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    font-family: Roboto, sans-serif
+    font-family: Roboto, sans-serif;
     padding: 10px;
   }
+
+.link {
+    display:none;
+}
 
 .logo-spotify {
     width: 90px;
@@ -70,7 +74,10 @@ button {
     margin-bottom: 30px;
 }
 
-.principal {
+.principal-tablet {
+    display: none;
+}
+.principal-mobile {
     display: flex;
     }
 
@@ -137,5 +144,30 @@ footer {
 
 @media screen and (min-width: 736px) 
     {
+    header {
+        display:flex;
+        height: 60px;
+        }
     
-}
+    .link { 
+        display: flex;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        gap: 20px;
+        margin-right: 20px;
+        font-weight: 800;
+           }
+           
+    .hamburguesa {
+        display: none;
+        }
+
+    .principal-mobile {
+        display: none;
+    }
+
+    .principal-tablet {
+        display: flex;
+            }
+
+    }
