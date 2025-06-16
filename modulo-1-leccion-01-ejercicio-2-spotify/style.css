@@ -149,6 +149,23 @@ footer {
         height: 60px;
         }
     
+    img { 
+        width: 70px;
+        height: 70px;
+    }
+
+    .premium-section {
+        background-image: url(./assets/images/premium_dancer.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+            }
+    
+    .title {
+        font-size: 60px;
+        line-height: 80px;        
+    }
+
     .link { 
         display: flex;
         font-family: Roboto, sans-serif;
@@ -168,6 +185,46 @@ footer {
 
     .principal-tablet {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        justify-content: space-around;
+           }
+
+    
+
+    .first-element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 30px;
+
+        gap: 40px;
             }
 
+    .second-element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-right: 100px;
+        gap: 40px;
+            }
+
+    .third-element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        gap: 40px;
+            }  
+                 
+    .fourth-element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        gap: 40px;
+             }
     }
