@@ -223,21 +223,21 @@ h2 {
         }
    
 .benefit-1 {
-    width: 35%;
-        }
+     flex: 1;
+      }
 
 .benefit-2 {
-  width: 35%;
+    flex: 1;
     }
 
 .benefit-3 {
-  width: 35%;
+    flex: 1;
     }
 
 .benefit-4 {
- width: 35%;
+    flex: 1;
     }
-    }
+  }
 
 @media screen and (min-width: 1024px) {
 
