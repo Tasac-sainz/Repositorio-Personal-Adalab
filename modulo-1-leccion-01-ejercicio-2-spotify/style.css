@@ -68,46 +68,61 @@ button {
     line-height: 15px;
 }
 
-.main-section {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
-
-.principal-tablet {
-    display: none;
-}
-.principal-mobile {
-    display: flex;
-    }
-
-.images {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    margin-top: 30px;
-    margin-left: 20px;
-       }
-
-.paragraph {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-top: 45px;
-    margin-left: 35px;
-    gap: 82px;
-    line-height: 25px;
-    }
-
-span {
-    font-size: 13px;
-    color: grey;
-}
-
 img {
     height: 60px;
     width: 60px;
     }
+
+.main-section {
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.benefit-1 {
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 20px;
+    font-size: small;
+    line-height: 25px;
+    text-align: left;
+      }
+
+.benefit-2 {
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 20px;
+    font-size: small;
+    line-height: 25px;
+    text-align: left;
+       }
+
+.benefit-3 {
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    margin-bottom: 15px;
+    gap: 20px;
+    font-size: small;
+    text-align: left;
+    line-height: 25px;
+        }
+
+.benefit-4 {
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 20px;
+    text-align: left;
+    font-size: small;
+    line-height: 25px;
+        }
+
+
 
 footer {
     background-color: black;
@@ -184,63 +199,52 @@ footer {
     .link a {
         color: white;
         text-decoration: none;
-    }
+            }
            
     .hamburguesa {
         display: none;
-        }
-
-    .principal-mobile {
-        display: none;
-    }
-
-    .principal-tablet {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        justify-content: space-around;
-        margin-right: 30px;
-           }
-
-    h2   {
-        font-size: 35px;
-        font-weight: 900;
-        }
-
-    .first-element {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        margin-left: 30px;
-        gap: 40px;
             }
 
-    .second-element {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        margin-right: 100px;
-        gap: 40px;
+.main-section {
+       margin-top: 25px;
+    margin-bottom: 30px;
             }
 
-    .third-element {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        gap: 40px;
-            }  
-                 
-    .fourth-element {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        gap: 40px;
-             }
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+
+}
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid;
+   
+
+.benefit-1 {
+    width: 35%;
+    border: solid;
+}
+
+.benefit-2 {
+  width: 35%;
+  border: solid;
+  box-sizing: border-box;
+}
+
+.benefit-3 {
+  width: 35%;
+  border: solid;
+}
+
+.benefit-4 {
+ width: 35%;
+ border: solid;
+}
+
     }
 
 @media screen and (min-width: 1024px) 
