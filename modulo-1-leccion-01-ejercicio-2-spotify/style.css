@@ -192,7 +192,6 @@ footer {
         gap: 20px;
         margin-right: 20px;
         font-weight: 800;
-        text-decoration: none;
         color: white;
            }
     
@@ -206,45 +205,49 @@ footer {
             }
 
 .main-section {
-       margin-top: 25px;
+    margin-top: 25px;
     margin-bottom: 30px;
+    justify-content: center;
             }
 
 h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 25px;
-
-}
+        }
 
 .benefits {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: solid;
+        }
    
-
 .benefit-1 {
     width: 35%;
-    border: solid;
-}
+        }
 
 .benefit-2 {
   width: 35%;
-  border: solid;
-  box-sizing: border-box;
-}
+    }
 
 .benefit-3 {
   width: 35%;
-  border: solid;
-}
+    }
 
 .benefit-4 {
  width: 35%;
- border: solid;
-}
-
+    }
     }
 
-/* @media screen and (min-width: 1024px)  */}
+@media screen and (min-width: 1024px) {
+
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+            }
+    
+    .benefit-1 {
+        flex-direction: column;
+    }
+}
