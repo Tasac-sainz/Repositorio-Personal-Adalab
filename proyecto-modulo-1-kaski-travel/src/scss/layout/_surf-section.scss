@@ -1,0 +1,11 @@
+@use '../core/variables' as vars;
+
+.surf-section {
+    background-color: vars.$color-bg;
+    padding-top: 100px;
+    padding-left: 20px;
+    .img-surf {
+        width: 100%;
+            }
+
+}
