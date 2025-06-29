@@ -1,0 +1,24 @@
+@use '../core/variables' as vars;
+.kaski-travel {
+    font-family: vars.$font-main;
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+}
+.pink-title {
+    font-family: vars.$font-main;
+    color: #f85e9f;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.logo-kaski {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 35px;
+    height: 35px;
+    margin-top: 8px;
+        }                
+

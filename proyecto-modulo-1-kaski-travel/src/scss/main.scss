@@ -1,7 +1,8 @@
 @use 'core/reset';
-@use 'components/code';
 @use 'components/links';
-@use 'layout/page';
+@use 'components/comun';
+@use 'layout/start-section';
+@use 'layout/destiny-section';
 @use 'layout/header';
 @use 'layout/footer';
 @use 'pages/index';

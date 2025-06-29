@@ -1,0 +1,76 @@
+@use '../core/variables' as vars;
+  
+    .destiny-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        background-color: vars.$color-bg;
+
+
+            .beach-container {
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                margin: 0% 5% 0% 5%;
+                    .img-beach {
+                        width: 100%;
+                        margin-bottom: 30px;
+                            }
+                    .text-beach {
+                        margin-bottom: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap:10px;
+                        width: 100%;
+                        text-align: left;
+                        margin-left: 80px;
+                    }
+
+                }
+            .submarine-container {
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                margin: 0% 5% 0% 5%;
+                    .img-submarine {
+                        width: 100%;
+                        margin-bottom: 40px;
+                            }
+                    .text-submarine {
+                        margin-bottom: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap:10px;
+                        width: 100%;
+                        text-align: left;
+                        margin-left: 80px
+                            }
+                }
+            .montain-container {
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                margin: 0% 5% 0% 5%;
+                    .img-montain {
+                        width: 100%;
+                        margin-bottom: 40px;
+                            } 
+                    .text-montain {
+                        margin-bottom: 30px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        gap:10px;
+                        width: 100%;
+                        text-align: left;
+                        margin-left: 80px
+                            }       
+                    }
+    }

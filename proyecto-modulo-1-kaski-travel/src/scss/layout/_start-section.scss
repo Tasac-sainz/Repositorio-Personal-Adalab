@@ -1,0 +1,43 @@
+@use '../core/variables' as vars;
+
+.main__pages {
+    font-family: vars.$font-main;
+         
+        .container-img-start {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+                .start-img {
+                    width: 75%;
+                        }
+                }
+        .container-start-text {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+                .start-text {
+                    font-weight: 9000;
+                    font-size: 30px;
+                    justify-content: center;
+                    margin: 30px;
+                        }
+                }
+            .container-start-button {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 100px;
+            
+                .start-button {
+                    background-color: #5D50C6;
+                    border-radius: 40px;
+                    color: white;
+                    font-weight: 600;
+                    width: 70%;
+                    height: 50px;
+                    border: none;
+                    box-shadow: 0px 5px 7px rgb(65, 42, 166);
+                        }
+                    }
+}
