@@ -7,5 +7,44 @@
     .img-surf {
         width: 100%;
             }
+    .text-surf {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 35px;
+        width: 80%;
+        margin:30px;
+    }
 
-}
+    .services-surf {      
+        display: grid;
+        grid-template-columns: 120px;
+        grid-template-rows: repeat(3) 50px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        gap:40px;
+            .icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 20px;
+                    }
+            .title-services {
+                font-size: 13px;
+                line-height: 25px;
+                padding-top: 20px;
+                    }
+            .subtitle-services{
+                font-size: 12px; 
+                color: #939FB4; 
+                font-weight: 600;
+                line-height: 20px;
+            }
+            // no me ha hecho falta matizar qué celda debe ocupar cada elemento del grid, pero si
+            // un futuro (en las media queries) es necesario, aquí comenzaba a hacerlo:
+                            // .landpoint-service {
+                            //     grid-column: 1/2;
+                            //     grid-row: 1/2;
+                            // }
+        }
+    }
