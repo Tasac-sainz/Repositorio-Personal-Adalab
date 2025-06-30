@@ -22,10 +22,37 @@
         .nav-header {
             display: none;
         }
-
-
 }
 
+@media screen and (min-width: 1024px) {
+    
+    .kaski-travel{
+        display: flex;
+        flex: 1;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .menu-header {
+        .burger-header {
+            display: none;
+            }
+        .link-header {
+            display: flex;
+            margin-right: 80px;
+            justify-content: space-around;
+                }
+                .nav-header{
+                    display: flex;
+                    gap: 50px;
+                    .home-header {
+                        color: #222831;
+                        font-weight: 600;
+                        font-size: 16px;
+                            }
+                }
+
+            }
+        }
 
     
 

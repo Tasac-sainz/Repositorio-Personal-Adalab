@@ -3,7 +3,7 @@
 .girlbag-section {
     background-color: vars.$color-bg;
     padding-left: 20px;
-    padding-top: 70px;
+
 
     .img-girlbag {
         width: 100%;
@@ -16,45 +16,58 @@
 }
 
 @media screen and (min-width: 1024px) {
-    
-.container-girlbag {
+
+.girlbag-section {
     display: flex;
-    flex-direction: column;
-    background-color: vars.$color-bg;
-        
-        .text-girlbag {
-            width: 250px;
-            margin-left: 40px;
-        }
-        
-        .cards-girlbag {
-            display: flex;
-            width: 25%;
-        
-            .party-girlbag {
+
+    .img-girlbag {
+        width: 50%;
+            }
+    .container-girlbag {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: vars.$color-bg;
+            .pink-title {
+                padding-left: 0;
+            }         
+            .text-girlbag {
+                width: 250px;
+                margin-left: 40px;
+                        }
+            .cards-girlbag {
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
-                text-align: center;
-                margin: 40px;
-                border: #F0F0F0;
-                border-radius: 20px;
-                background-color: white;
-                width: 110px;
-                height: 80px;
-                    }
-            .hotel-girlbag{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                margin: 40px;
-                border: #F0F0F0;
-                border-radius: 20px;
-                background-color: white;
-                width: 110px;
-                height: 80px;            
-                    }
+                            
+                .party-girlbag {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 40px;
+                    border: solid;
+                    border-color: #F0F0F0;
+                    border-radius: 20px;
+                    border-width: 1px;
+                    background-color: white;
+                    width: 110px;
+                    height: 80px;
+                        }
+                .hotel-girlbag{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 40px;
+                    border: solid;
+                    border-color: #F0F0F0;
+                    border-radius: 20px;
+                    border-width: 1px;
+                    background-color: white;
+                    width: 110px;
+                    height: 80px;            
+                        }
+            }
         }
     }
 }

@@ -2,6 +2,8 @@
 
 .destiny-section {
     background-color: vars.$color-bg;
+    display: flex;
+    flex-direction: column;
 
     .pink-title {
         padding-top: 20px;
@@ -16,7 +18,10 @@
         margin-right: 20px;
         margin-bottom: 80px;
         background-color: white;
-        border-radius: 35px; 
+        border-bottom-left-radius: 35px; 
+        border-bottom-right-radius: 35px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
         
             .text-beach {
                 height: 60px;
@@ -36,7 +41,10 @@
         margin-right: 20px;
         margin-bottom: 80px;
         background-color: white;
-        border-radius: 35px; 
+        border-bottom-left-radius: 35px; 
+        border-bottom-right-radius: 35px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
         
             .text-submarine {
                 height: 60px;
@@ -54,8 +62,12 @@
         justify-content: center;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 80px;
         background-color: white;
-        border-radius: 35px; 
+        border-bottom-left-radius: 35px; 
+        border-bottom-right-radius: 35px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
                
             .text-montain {
                 height: 60px;
@@ -66,76 +78,25 @@
                 line-height: 26px;
                     }
             }
-    
-//     .destiny-cards {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         justify-self: center;
-//         flex-wrap: nowrap;
-//         gap: 50px;
-//         background-color: vars.$color-bg;
-//         padding-bottom: 60px;
-//         padding-top: 40px;
-
-//             .beach-container {
-//                 border-radius: 30px;
-//                 border-top-left-radius: 70px;
-//                 border-top-right-radius: 70px;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 background-color: white;
-//                     .img-beach {
-//                         margin-bottom: 30px;
-//                         max-width: 100%;
-//                             }
-//                     .text-beach {
-//                         margin-bottom: 30px;
-//                         display: flex;
-//                         flex-direction: column;
-//                         gap:10px;
-//                         text-align: left;
-//                             }
-//                 }
-//             .submarine-container {
-//                 border-radius: 30px;
-//                 border-top-left-radius: 70px;
-//                 border-top-right-radius: 70px;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 background-color: white;
-//                     .img-submarine {
-//                         margin-bottom: 40px;
-//                             }
-//                     .text-submarine {
-//                         margin-bottom: 30px;
-//                         display: flex;
-//                         flex-direction: column;
-//                         gap:10px;
-//                         text-align: left;
-//                             }
-//                 }
-//             .montain-container {
-//                 border-radius: 30px;
-//                 border-top-left-radius: 70px;
-//                 border-top-right-radius: 70px;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 background-color: white;
-//                     .img-montain {
-//                         margin-bottom: 40px;
-//                             } 
-//                     .text-montain {
-//                         margin-bottom: 30px;
-//                         display: flex;
-//                         flex-direction: column;
-//                         gap:10px;
-//                         width:300px;
-//                         text-align: left;
-//                             }       
-//                     }
-//     }
 }
+
+@media screen and (min-width: 1024px) {
+
+    .pink-title {
+        justify-content: left;
+        padding-left: 50px;
+            }
+    .destiny-cards {
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+        flex-wrap: wrap;
+            .beach-container {width: 28%;} .submarine-container {width: 28%;} 
+            .montain-container {
+                width: 28%;
+                justify-content: flex-start;
+                }
+            }
+
+    }
+    

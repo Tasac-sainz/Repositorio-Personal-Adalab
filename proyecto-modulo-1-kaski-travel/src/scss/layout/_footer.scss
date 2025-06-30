@@ -2,8 +2,9 @@
 
 .page__footer {
     font-family: vars.$font-main;
-    margin-left: 20px;
-    margin-bottom: 50px;
+    background-color: vars.$color-bg;
+    padding-left: 20px;
+    padding-bottom: 50px;
 
     .footer-logo {
         display: flex;
