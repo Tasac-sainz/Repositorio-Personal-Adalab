@@ -1,0 +1,79 @@
+@use '../core/variables' as vars;
+
+.contact__header {
+    font-family: vars.$font-main;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    
+
+        .kaski-travel {
+            width: 100%;
+            text-align: left;
+            align-content: center;
+            margin-left: 15px;
+        }
+        .menu-header {
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+        .nav-header {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .kaski-travel{
+        display: flex;
+        flex: 1;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .menu-header {
+        .burger-header {
+            display: none;
+            }
+        .link-header {
+            display: flex;
+            margin-right: 80px;
+            justify-content: space-around;
+                }
+                .nav-header{
+                    display: flex;
+                    gap: 50px;
+                    .home-header {
+                        color: #222831;
+                        font-weight: 600;
+                        font-size: 16px;
+                            }
+                }
+
+            }
+        }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
