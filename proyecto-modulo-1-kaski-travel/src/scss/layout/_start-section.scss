@@ -2,12 +2,13 @@
 
 .main__pages {
     font-family: vars.$font-main;
+    background-color: vars.$color-bg;   
          
         .container-img-start {
             display: flex;
             justify-content: center;
-            margin-top: 50px;
-            margin-bottom: 30px;
+            padding-top: 50px;
+            padding-bottom: 30px;
                 .start-img {
                     width: 75%;
                         }
