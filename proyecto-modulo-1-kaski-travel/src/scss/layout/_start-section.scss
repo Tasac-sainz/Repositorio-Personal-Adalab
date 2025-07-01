@@ -42,3 +42,20 @@
                         }
                     }
 }
+
+@media screen and (min-width:1024px) {
+
+.start-section {
+    display: flex;
+    flex-direction: row-reverse;
+        .container-img-start {
+            width: 60%;
+            }
+        .start-text-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+}
+}
