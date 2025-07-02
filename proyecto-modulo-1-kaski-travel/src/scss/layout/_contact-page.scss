@@ -8,7 +8,6 @@
     border-radius: 20px;
 
         .main-container {
-            border: solid;
             width: 100%;
             height: fit-content;
             display: flex;
@@ -20,7 +19,6 @@
                 .form-container {
                     font-family: vars.$font-main;
                     margin-top: 50px;   
-                    margin-bottom: 100px;   
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
