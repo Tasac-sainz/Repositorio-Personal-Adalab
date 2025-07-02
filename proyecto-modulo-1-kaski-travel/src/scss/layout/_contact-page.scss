@@ -5,44 +5,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
 
-    
-    .form-container {
-        font-family: vars.$font-main;
-        font-weight: 600px;
-        color: #191825c0;
-        margin-top: 50px;      
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 60px;
-         
-            #email, #firstName, #comments {
-                background-color: white;
-                border-radius: 20px;
-                border: none;
-                height: 70px;
-                width: 200px;
-                padding-left: 20px;
+        .main-container {
+            border: solid;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+
+                .form-container {
+                    font-family: vars.$font-main;
+                    margin-top: 50px;   
+                    margin-bottom: 100px;   
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 60px;
+                    
+                        #email, #firstName, #comments {
+                            background-color: white;
+                            border-radius: 20px;
+                            border: none;
+                            height: 70px;
+                            width: 200px;
+                            padding-left: 20px;
+                                }
+                        
+                            ::placeholder {
+                            font-weight: bold;
+                            color: #727276c0;
+                            }
+
+                        #submit {
+                        font-family: vars.$font-main;
+                        background-color: #5D50C6;
+                        border: none;
+                        border-radius: 20px;
+                        height: 60px;
+                        width: 120px;
+                        color: white;
+                        }                   
                     }
-                
-                ::placeholder {
-                font-weight: bold;
-                color: #727276c0;
+                .map {
+                    width: 100%;
+                    height: auto;
+                    padding-top: 125px;
                 }
-
-                #submit {
-                font-family: vars.$font-main;
-                background-color: #5D50C6;
-                border: none;
-                border-radius: 20px;
-                height: 60px;
-                width: 120px;
-                color: white;
-                     }
-
+            }
         }
-
-    }
