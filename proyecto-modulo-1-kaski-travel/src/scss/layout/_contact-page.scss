@@ -1,0 +1,48 @@
+@use '../core/variables' as vars;
+.contact__main {
+    background-color:  rgba(250, 205, 73, 0.08);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    
+    .form-container {
+        font-family: vars.$font-main;
+        font-weight: 600px;
+        color: #191825c0;
+        margin-top: 50px;      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+         
+            #email, #firstName, #comments {
+                background-color: white;
+                border-radius: 20px;
+                border: none;
+                height: 70px;
+                width: 200px;
+                padding-left: 20px;
+                    }
+                
+                ::placeholder {
+                font-weight: bold;
+                color: #727276c0;
+                }
+
+                #submit {
+                font-family: vars.$font-main;
+                background-color: #5D50C6;
+                border: none;
+                border-radius: 20px;
+                height: 60px;
+                width: 120px;
+                color: white;
+                     }
+
+        }
+
+    }
