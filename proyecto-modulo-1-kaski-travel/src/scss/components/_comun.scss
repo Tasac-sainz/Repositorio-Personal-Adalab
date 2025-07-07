@@ -1,14 +1,15 @@
 @use '../core/variables' as vars;
-.kaski-travel {
+.kaski-web {
     font-family: vars.$font-main;
     color: black;
     font-size: 24px;
     font-weight: 800;
 }
-.green-title {
+.blue-title {
     font-family: vars.$font-main;
-    color: #3ab298;
+    color: #5D50C6;
     font-weight: bold;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     margin: 30px;

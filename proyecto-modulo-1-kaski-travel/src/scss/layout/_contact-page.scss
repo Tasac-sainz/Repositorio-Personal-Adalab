@@ -1,6 +1,6 @@
 @use '../core/variables' as vars;
 .contact__main {
-    background-color:  rgba(250, 205, 73, 0.08);
+    background-color: #5e50c60d;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,14 @@
                             width: 200px;
                             padding-left: 20px;
                                 }
+                            #comments {
+                                width: 400px;
+                                height: 150px;
+                                    ::placeholder {
+                                        text-align: left;   
+                                        vertical-align: top
+                                    }
+                            }
                         
                             ::placeholder {
                             font-weight: bold;
