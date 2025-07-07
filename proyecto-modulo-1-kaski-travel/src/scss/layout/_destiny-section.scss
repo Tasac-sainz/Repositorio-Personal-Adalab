@@ -5,9 +5,10 @@
     display: flex;
     flex-direction: column;
 
-    .green-title {
+    .blue-title {
         padding-top: 20px;
         padding-bottom: 30px;
+        text-align: center;
     }
 
     .beach-container {
@@ -82,7 +83,7 @@
 
 @media screen and (min-width: 1024px) {
 
-    .green-title {
+    .blue-title {
         justify-content: left;
         padding-left: 50px;
             }
