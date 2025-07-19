@@ -10,3 +10,45 @@ body {
 .image {
     width: 500px;
 }
+
+.button-ej6 {
+    padding: 10px;
+    border: 5px;
+    background-color: rgb(39, 197, 197);
+    border-radius: 20px;
+    border: solid;
+
+    }
+
+.disabled {
+  opacity: 0.5;
+  padding: 10px;
+  border: 5px;
+  background-color: rgb(39, 197, 197);
+  border-radius: 20px;
+  border: solid;
+
+ 
+    }
+
+.button-event {
+    padding: 10px;
+    border: 5px;
+    background-color: rgb(39, 197, 197);
+    border-radius: 20px;
+    border: solid;
+}
+.input {
+    border: solid;
+    border-radius: 15px;
+    height: 40px;
+}
+.change-button {
+    border-radius: 15px;
+    padding: 15px;
+}
+.changed {
+    background-color: rgb(71, 217, 54);
+    border-color: black;
+    color: rgb(13, 13, 14);
+}
