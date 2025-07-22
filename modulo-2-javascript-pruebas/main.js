@@ -95,3 +95,32 @@ paragraphs.forEach ((paragraph) => {
     paragraph.classList.add ("custom");
     console.log (paragraph);
 });
+console.log ("********************************************");
+
+// 2.10 Arrays y bucles
+// 1.📈 Crear un listado de números
+
+const get100Numbers = () => {
+    const numbers = [];
+    for (let i=0; i<100; i ++) {
+        numbers.push (i+1);
+    };
+    return numbers;
+};
+const arrayResult = get100Numbers ();
+console.log (arrayResult);
+
+arrayResult.forEach ((number) => {
+    console.log (number);
+});
+console.log ("***************************************")
+
+
+const getReversed100Numbers = () => {
+    const numbers = get100Numbers ();
+    return numbers.reverse();
+};
+const reversedArray = getReversed100Numbers ();
+reversedArray.forEach ((number) => {
+    console.log (number);
+});
