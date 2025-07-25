@@ -37,6 +37,29 @@ const textEj4 = document.querySelector (".ej4-text");
 
 inputEj4.addEventListener ("input", (event) =>{
     textEj4.innerHTML = event.currentTarget.value;
-})
+});
 
 //EJERCICIO 5
+
+const ej5Btn1 = document.querySelector (".ej5-btn1");
+const ej5Btn2 = document.querySelector (".ej5-btn2");
+
+const callbackClick = (event) => {
+    event.currentTarget.classList.toggle("ej5-btnChanged");
+}
+
+ej5Btn1.addEventListener("click", callbackClick);
+ej5Btn2.addEventListener("click", callbackClick)
+
+//EJERCICIO 6
+const ej6Btn = document.querySelector (".ej6-btn");
+const movies = document.querySelector (".ej6-list");
+
+const inception = 'Inception';
+const theButterFlyEffect = 'The butterfly effect';
+const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';
+const blueVelvet = 'Blue velvet';
+const split = 'Split';
+
+ej6Btn.addEventListener ("click", () => {
+    movies.innerHTML = inception + theButterFlyEffect + eternalSunshineOfTheSM + blueVelvet + split;});
