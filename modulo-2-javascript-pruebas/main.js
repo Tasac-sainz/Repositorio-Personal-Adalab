@@ -124,3 +124,20 @@ const reversedArray = getReversed100Numbers ();
 reversedArray.forEach ((number) => {
     console.log (number);
 });
+
+console.log("*****************************");
+
+//MÉTODO SPLICE EN ARRAYS
+
+const month= ["Enero", "Febrero", "Mayo", "Junio"];
+month.splice(2,2,"Marzo","Abril")
+console.log(month);
+
+const mesAbril=month.indexOf("Abril")
+console.log(mesAbril);
+
+
+const numberArray = [2,3,15,25,34,35,36,37];
+const highThan25 = numberArray.findIndex (num => num>25);
+console.log("El primer índice que es mayor que 25 es el: " + highThan25);
+
