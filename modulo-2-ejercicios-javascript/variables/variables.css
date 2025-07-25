@@ -1,0 +1,45 @@
+* {
+  margin: 15px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ADALAB EJERCICIOS DE VARIABLES
+EJERCICIO 3 */
+
+ul {
+    display: none;
+}
+
+.ej4-container {
+    color: rgb(24, 44, 136);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* EJERCICIO 4 */
+.jack {
+    width: 500px;
+
+}
+
+/* EJERCICIO 6 */
+.ej6-button {
+    padding: 10px;
+    background-color: orangered;
+    color: black;
+    font-weight: 900;
+    font-family:'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    margin-left: 50px;
+    }
+
+.disabled-button {
+    padding: 10px;
+    background-color: orangered;
+    color: black;
+    font-weight: 900;
+    font-family:'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    margin-left: 50px;
+    opacity: 0.7;
+    }

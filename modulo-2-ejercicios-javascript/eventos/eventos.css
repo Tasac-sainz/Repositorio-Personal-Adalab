@@ -1,0 +1,63 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* EJERCICIO 1 */
+
+.ej1-btn {
+    background-color: rgb(135, 233, 215);
+    color:darkgreen;
+    font-weight: bold;
+    padding: 3px;
+    width: 100px;
+    border-radius: 10px;
+}
+.ej1-span{
+    font-family: sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.ej1-input {
+    padding: 5px;
+}
+
+/* EJERCICIO 2 */
+
+.ej2-btn {
+    padding: 8px;
+    background-color: bisque;
+    color: black;
+    border-radius: 5px;
+    margin-left: 170px;
+}
+.ej2-btnChanged {
+    padding: 8px;
+    background-color: rgb(100, 188, 147);
+    color: white;
+    border-radius: 5px;
+}
+
+/* EJERCICIO 3 */
+/* EJERCICIO 4 */
+
+.ej4-input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: powderblue;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.ej4-text {
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* EJERCICIO 5 */
