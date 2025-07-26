@@ -141,3 +141,25 @@ const numberArray = [2,3,15,25,34,35,36,37];
 const highThan25 = numberArray.findIndex (num => num>25);
 console.log("El primer índice que es mayor que 25 es el: " + highThan25);
 
+// EJERCICIO 3 DE PETICIONES AL SERVIDOR
+const inputGit = document.querySelector (".input-git");
+const btnGit = document.querySelector (".btn-git");
+const gitAvatar = document.querySelector (".info-data-avatar");
+const gitName = document.querySelector (".info-data-name");
+const gitRepositories = document.querySelector (".info-data-repositories");
+
+inputGit.addEventListener ("input", (event) => {
+    const textInputGit = event.currentTarget.value;});
+ 
+const handleClickGit = () => {
+    const username = textInputGit.value;
+    fetch ("https://api.github.com/users/${username}")
+    .then ((response) => response.json ())
+    .then ((data) => {
+    console.log (data); 
+  })
+  .catch((error) => {
+    console.log("Error", error);
+  })};
+
+  btnGit.addEventListener (("click"), handleClickGit);
