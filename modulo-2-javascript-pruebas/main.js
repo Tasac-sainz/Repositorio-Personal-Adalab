@@ -144,22 +144,23 @@ console.log("El primer índice que es mayor que 25 es el: " + highThan25);
 // EJERCICIO 3 DE PETICIONES AL SERVIDOR
 const inputGit = document.querySelector (".input-git");
 const btnGit = document.querySelector (".btn-git");
-const gitAvatar = document.querySelector (".info-data-avatar");
-const gitName = document.querySelector (".info-data-name");
-const gitRepositories = document.querySelector (".info-data-repositories");
+const gitData = document.querySelector (".info-data");
+
+let username ="";
 
 inputGit.addEventListener ("input", (event) => {
-    const textInputGit = event.currentTarget.value;});
+    username = event.currentTarget.value;});
  
 const handleClickGit = () => {
-    const username = textInputGit.value;
-    fetch ("https://api.github.com/users/${username}")
+    fetch (`https://api.github.com/users/${username}`)
     .then ((response) => response.json ())
     .then ((data) => {
-    console.log (data); 
+    console.log (data);
+    gitData.innerHTML =`"Usuario: " ${data.name || "No disponible"} <br>  <img src="${data.avatar_url}" width="200">" <br> "Número de repositorios: " ${data.public_repos||"No disponible"}`;
+
   })
   .catch((error) => {
     console.log("Error", error);
   })};
 
-  btnGit.addEventListener (("click"), handleClickGit);
+  btnGit.addEventListener ("click", handleClickGit);
