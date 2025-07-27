@@ -1,5 +1,4 @@
 "use strict"
-
 console.log("ready to events!");
 
 // ADALAB: EJERCICIOS DE EVENTOS
@@ -52,14 +51,62 @@ ej5Btn1.addEventListener("click", callbackClick);
 ej5Btn2.addEventListener("click", callbackClick)
 
 //EJERCICIO 6
-const ej6Btn = document.querySelector (".ej6-btn");
-const movies = document.querySelector (".ej6-list");
+const startBtn = document.querySelector(".ej6-btn");
+const movieList = document.querySelector(".movie-list");
+const selectedMovie = document.querySelector(".selected-movie");
 
-const inception = 'Inception';
-const theButterFlyEffect = 'The butterfly effect';
-const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';
-const blueVelvet = 'Blue velvet';
-const split = 'Split';
+const rutas = 'Hacia Rutas Salvajes';
+const noviembre = 'Noviembre';
+const edukadores = 'Los edukadores';
+const captain = 'Captain Fantastic';
+const coraline = 'Coraline';
 
-ej6Btn.addEventListener ("click", () => {
-    movies.innerHTML = inception + theButterFlyEffect + eternalSunshineOfTheSM + blueVelvet + split;});
+startBtn.addEventListener("click", () => {
+// Crear elementos uno a uno (sin bucles)
+   const liRutas = document.createElement("li");
+   liRutas.textContent = rutas;
+   liRutas.style.cursor = "pointer";
+   movieList.appendChild(liRutas);
+
+   const liNoviembre = document.createElement("li");
+   liNoviembre.textContent = noviembre;
+   liNoviembre.style.cursor = "pointer";
+   movieList.appendChild(liNoviembre);
+
+   const liEdukadores = document.createElement("li");
+   liEdukadores.textContent = edukadores;
+   liEdukadores.style.cursor = "pointer";
+   movieList.appendChild(liEdukadores);
+
+   const liCaptain = document.createElement("li");
+   liCaptain.textContent = captain;
+   liCaptain.style.cursor = "pointer";
+   movieList.appendChild(liCaptain);
+
+   const liCoraline = document.createElement("li");
+   liCoraline.textContent = coraline;
+   liCoraline.style.cursor = "pointer";
+   movieList.appendChild(liCoraline);
+
+// Eventos uno por uno
+   liRutas.addEventListener("click", () => {
+     selectedMovie.textContent = "La película seleccionada es: " + rutas;
+   });
+
+   liNoviembre.addEventListener("click", () => {
+     selectedMovie.textContent = "La película seleccionada es: " + noviembre;
+   });
+
+  liEdukadores.addEventListener("click", () => {
+     selectedMovie.textContent = "La película seleccionada es: " + edukadores;
+   });
+
+   liCaptain.addEventListener("click", () => {
+     selectedMovie.textContent = "La película seleccionada es: " + captain;
+  });
+
+   liCoraline.addEventListener("click", () => {
+     selectedMovie.textContent = "La película seleccionada es: " + coraline;
+  });
+    
+});

@@ -82,6 +82,11 @@
 }
 
     /* EJERCICIO 6 */
+.container-btn6{
+    display: flex;
+    justify-content: center;
+}
+
 .ej6-btn {
     padding: 10px;
     background-color: rgb(34, 153, 153);
@@ -91,7 +96,16 @@
     border-radius: 15px;
 }
 
-.ej6-list {
-  color: blueviolet;
+.movie-list {
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
+}
 
+.selected-movie {
+    color:  blue;
+    font-weight: 900;
+    font-family: Lucida sans;
+    text-align: center;
+    padding: 10px;
 }
