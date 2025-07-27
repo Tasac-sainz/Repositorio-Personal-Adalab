@@ -6,7 +6,6 @@ const DEFAULT_AVATAR = "https://images.pexels.com/photos/4457973/pexels-photo-44
 
 // avatar que eligió el usuario al registrarse
 let userAvatar = document.querySelector (".user-avatar");
-userAvatar.src = "https://images.pexels.com/photos/33179452/pexels-photo-33179452.jpeg";
-userAvatar.style= "width:100px; height:150px";
+const USER_AVATAR = "https://images.pexels.com/photos/33179452/pexels-photo-33179452.jpeg";
 
-
+userAvatar.src = USER_AVATAR || DEFAULT_AVATAR;

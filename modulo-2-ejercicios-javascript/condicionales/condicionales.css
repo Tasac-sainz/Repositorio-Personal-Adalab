@@ -5,14 +5,21 @@
     border: solid;
     font-family: 'Calibri', 'Trebuchet MS', sans-serif;
 }
+.access-ok::placeholder {
+    color: black;
+}
 
 /* EJERCICIO 2 */
-.number-conditional {
-    background-color:rgb(253, 61, 99);
-    color: white;
+.number-conditional  {
+    background-color:rgb(17, 158, 17);
+    color: #ffffff;
     font-weight: 900;
     font-family: "Arial";
     text-align: center;
+}
+::placeholder {
+    color: white;
+    font-weight: 80;
 }
 .conditional-text-ej2 {
     font-family: "Arial";
@@ -21,4 +28,31 @@
     text-align: center;
 }
 
-/* EJERCICIO 3 */
+/* EJERCICIO 3  AVATAR EN OTRA CARPETA*/
+/*EJERCICIO 4 */
+.dog-age  {
+    padding: 5px;
+    background-color: rgb(230, 227, 227);
+    font-family: 'Tahoma';
+    color: black;
+    }
+.dog-age::placeholder {
+    color: rgba(0, 0, 0, 0.682);
+}
+.dog-calculate {
+    border: solid;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: white;
+    font-family: "Calibri";
+    padding: 10px;
+}
+.result-calculate {
+    font-family: "Calibri";
+    color: black;
+    font-weight: 900px;
+}
+ /*EJERCICIO 5*/
+.recipe-container {
+    font-family: cursive;
+}

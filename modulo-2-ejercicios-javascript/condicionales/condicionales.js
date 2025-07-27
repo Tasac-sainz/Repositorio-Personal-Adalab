@@ -42,3 +42,65 @@ if (numberEj6 === 0) {
 });
 
 /*EJERCICIO 3 */
+// AVATAR TIENE SU PROPIA CARPETA
+
+/*EJERCICIO 4 */
+const inputDog = document.querySelector (".dog-age");
+const dogButton = document.querySelector(".dog-calculate");
+const resultAge = document.querySelector(".result-calculate")
+
+dogButton.addEventListener ("click", () => {
+    console.log("click");
+    const dogAge = parseInt (inputDog.value);
+    
+    if (dogAge === 1) {
+        resultAge.innerHTML = "Tu perro tiene "  + (dogAge + 14) + " años.";
+    } else if (dogAge === 2) {
+        resultAge.innerHTML = "Tu perro tiene 20 años";
+    } else if (dogAge > 2) {
+        resultAge.innerHTML = "Tu perro tiene " + (20 + dogAge * 6) + " años.";
+    } else {
+        resultAge.innerHTML = "No se reconoce el valor introducido"
+    }
+});
+
+/*EJERCICIO 5 */
+const ingrediente = document.querySelector ("#ingredients");
+const recipe = document.querySelector (".recipe");
+const btnSend = document.querySelector (".btn-enviar");
+let ingredients = "pollo";
+
+btnSend.addEventListener("click", (event) => {
+    event.preventDefault();
+    ingredients= ingrediente.value;
+    if (ingredients === "pollo") {
+    recipe.innerHTML = "Puedes hacerte una ensalada con unos filetes de pollo a la plancha";
+    } else if (ingredients === "merluza"){
+        recipe.innerHTML = "¿Qué te parece una merluza en salsa verde?";
+    } else if (ingredients === "espinacas") {
+        recipe.innerHTML = "Uff, ya lo siento, sólo se me ocurre que las puedas rehogar"
+    } else {
+        recipe.innerHTML = "Haz el favor de ir a la compra pero ya, chiquilla! que vas a morir de hambre";
+    };
+})
+
+/*EJERCICIO 5 EN LA CONSOLA*/
+
+let food = "pollo";
+food = "espinacas"
+food = "merluza"
+food = "espinacas"
+
+if (food === "pollo") {
+    console.log ("Tu ingrediente es: " + food + ". Puedes hacerte un filete con patatas");
+} else if (food === "merluza") {
+    console.log ("Tu ingrediente es: " + food + ". Puedes hacerte una merlucita rebozada");
+} else if (food === "espinacas") {
+    console.log("Tu ingrediente es: " + food + ". Puedes hacerte un pastel de espinacas");
+    } else {
+        console.log ("Nevera vacía")
+    };
+
+/*EJERCICIO 6*/
+const year = 1994;
+console.log("El siguiente año bisiesto es " + (year +1));
