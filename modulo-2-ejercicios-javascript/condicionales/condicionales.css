@@ -1,0 +1,24 @@
+/* EJERCICIO 1 */
+.access-ok {
+    padding: 7px;
+    border-radius: 7px;
+    border: solid;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* EJERCICIO 2 */
+.number-conditional {
+    background-color:rgb(253, 61, 99);
+    color: white;
+    font-weight: 900;
+    font-family: "Arial";
+    text-align: center;
+}
+.conditional-text-ej2 {
+    font-family: "Arial";
+    color: red;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* EJERCICIO 3 */
