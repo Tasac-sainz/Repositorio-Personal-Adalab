@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+.main {
+  background-color: rgb(210, 207, 207);
+}
+
+.main__title {
+  color: rgb(147, 59, 191);
+  text-align: center;
+}
+
+.wave-class {
+    color: black;
+}
+
+/* EJERCICIO 5 */
+h2 {
+  text-align: center;
+}
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.dog-list {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
