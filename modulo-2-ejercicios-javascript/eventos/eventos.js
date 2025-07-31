@@ -9,14 +9,14 @@ const ej1Button = document.querySelector (".ej1-btn");
 const ej1Input = document.querySelector (".ej1-input");
 
 ej1Button.addEventListener ("click", () => {
-    document.querySelector (".ej1-span").innerHTML = "Hola " + ej1Input.value + ", cada día estás más guapa";
+    document.querySelector(".ej1-span").innerHTML = "Hola " + ej1Input.value + ", cada día estás más guapa";
 });
 
 //EJERCICIO 2
 
 const ej2Button = document.querySelector(".ej2-btn");
 
-ej2Button.addEventListener ("click", () => {
+ej2Button.addEventListener("click", () => {
         ej2Button.classList.toggle ("ej2-btnChanged");
 });
 
