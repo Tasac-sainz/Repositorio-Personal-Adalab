@@ -1,0 +1,50 @@
+* {
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Calibri", 'Trebuchet MS', sans-serif;
+}
+
+.play-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 100px;
+}
+
+
+.play {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    width: 100px;
+}
+
+.dog-container {
+    margin-top: 50px;
+    display: flex;
+   
+}
+
+.dog1, .dog2, .dog3 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(42, 58, 165);
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    width: 150px;
+}
+
+.dog-image {
+    width: 50%;
+    object-fit: contain;
+
+}
