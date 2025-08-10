@@ -46,7 +46,8 @@ const pearsBox = {
     addPears: () => pearsBox.current ++,
     restPears: () => {
         if (pearsBox.current > pearsBox.min) {
-                 pearsBox.current --}
+            pearsBox.current --
+            numberOfPears.innerHTML = `En la cesta hay ${pearsBox.current} peras porque has sacado una`}
         else {
                     numberOfPears.innerHTML ="No quedan peras, no puedes sacar ninguna";
                     console.log ("No puedes sacar más peras porque la cesta está vacía")
@@ -69,7 +70,6 @@ addBtn.addEventListener ("click", () => {
 });
 restBtn.addEventListener("click", () => {
     pearsBox.restPears ()
-    numberOfPears.innerHTML = `En la cesta hay ${pearsBox.current} peras porque has sacado una`;
     console.log(`En la cesta hay ${pearsBox.current} peras`);
 });
 resetBtn.addEventListener("click", () => {
@@ -78,3 +78,20 @@ resetBtn.addEventListener("click", () => {
     numberOfPears.innerHTML = `En la cesta hay ${pearsBox.current} peras porque has vaciado la cesta`;
 });
 
+// EJERCICIO 5
+
+const infoUs = {};
+const job = "developer";
+
+infoUs["firstName"]= "López";
+infoUs ["lastName"]= "García";
+infoUs.age= 35;
+infoUs.job= job;
+
+console.log (infoUs);
+
+infoUs.firstName = "Rodríguez";
+infoUs.age= 40;
+console.log (infoUs["job"]);
+console.log (infoUs.firstName);
+console.log (infoUs.age);
