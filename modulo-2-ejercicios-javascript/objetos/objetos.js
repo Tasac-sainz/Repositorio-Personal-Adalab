@@ -83,15 +83,16 @@ resetBtn.addEventListener("click", () => {
 const infoUs = {};
 const job = "developer";
 
-infoUs["firstName"]= "López";
+infoUs["firstName"]= "Antonio";
 infoUs ["lastName"]= "García";
 infoUs.age= 35;
 infoUs.job= job;
 
 console.log (infoUs);
 
-infoUs.firstName = "Rodríguez";
+infoUs.firstName = "Noa";
 infoUs.age= 40;
-console.log (infoUs["job"]);
-console.log (infoUs.firstName);
-console.log (infoUs.age);
+console.log ("El valor de la propiedad 'job' es: ", infoUs["job"]);
+console.log ("Esta persona cambió de nombre a: ", infoUs.firstName);
+console.log (`Su edad es: ${infoUs.age} años`);
+
