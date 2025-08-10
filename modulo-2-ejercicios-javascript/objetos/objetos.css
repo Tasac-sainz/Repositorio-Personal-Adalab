@@ -1,0 +1,27 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    }
+
+button {
+    border-radius: 10px;
+    padding: 8px;  
+    }
+
+.box-pears {
+    border: solid;
+    width: 35%;
+    height: 100px;
+    text-align: center;
+    }
+.add-pears {
+    background-color: green;
+    }
+.rest-pears {
+    background-color: red; 
+    }   
+.reset-pears {
+    background-color: grey;
+    }
