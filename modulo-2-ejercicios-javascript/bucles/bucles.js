@@ -16,7 +16,7 @@ for (let i=0; i<10; i++) {
     console.log(`El resultado es: ${acc}`);    
 }
 
-// EJERCICIO 3
+// EJERCICIO 
 
 const numbersEj3 = [7, 6, 9, 10, 8];
 numbersEj3.push(5);
@@ -53,7 +53,7 @@ console.log("La media del array 3 es: " , average(array3), "y su longitud: ", ar
 console.log("La media del array 4 es: " , average(array4), "y su longitud: ", array4.length);
 
 
-// EJERCICIO 4
+// EJERCICIO 3
 const inputOne= document.querySelector('.input-ej4_1');
 const inputTwo= document.querySelector('.input-ej4_2');
 const submitEj4= document.querySelector('.form-4');
@@ -66,10 +66,12 @@ const handleClick = (event) => {
     resultEj4.innerHTML = "";
     for (const work of works) {
         resultEj4.innerHTML += `¡A mí también me encanta "${work}"! Tenemos mucho en común, humana <br><br>`
-            }
+    }
 }
 
 submitEj4.addEventListener ("submit", handleClick)
+
+// EJERCICIO 4
 
 
 
