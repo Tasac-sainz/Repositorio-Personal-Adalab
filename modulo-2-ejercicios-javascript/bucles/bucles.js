@@ -73,7 +73,7 @@ submitEj4.addEventListener ("submit", handleClick)
 
 // EJERCICIO 4
 
-const adalaber = [
+const adalabers = [
     {name: "María",
      age: 29,
      profession: "diseñadora"
