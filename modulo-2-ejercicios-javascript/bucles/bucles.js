@@ -73,5 +73,27 @@ submitEj4.addEventListener ("submit", handleClick)
 
 // EJERCICIO 4
 
+const adalaber = [
+    {name: "María",
+     age: 29,
+     profession: "diseñadora"
+    },
+    {name: "Lucía",
+     age: 31,
+     profession: "ingeniera química" 
+    },
+    {name: "Susana",
+     age: 34,
+     profession: "periodista"
+    },
+    {name: "Rocío",
+     age: 25,
+     profession: "actriz"
+    },
+    {name: "Inmaculada",
+     age: 21,
+     profession: "diseñadora"
+    },
+]
 
 
