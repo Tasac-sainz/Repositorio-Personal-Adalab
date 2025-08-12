@@ -96,4 +96,94 @@ const adalabers = [
     },
 ]
 
+const countAdalabers= () => {
+    return adalabers.length
+}
+console.log("El número actual de Adalabers es: ", countAdalabers());
 
+const averageAge= () => {
+    let adalSum= 0;
+
+    for (const adalaber of adalabers) {
+        adalSum += adalaber.age;
+    }
+    const averageAda= adalSum / countAdalabers();
+    return averageAda;
+}
+console.log("La media de edad de las adalabers es: ", averageAge()," años");
+
+
+ const theYoungest= () => {
+     return adalabers.reduce ((adalaberAnterior, adalaberSiguiente) => {
+     if (adalaberSiguiente.age < adalaberAnterior.age) {
+        return adalaberSiguiente;
+     } else {
+         return adalaberAnterior;
+     }
+ })}
+ const resultYoungest = theYoungest()
+ console.log("La Adalaber más jóven de esta promoción es", resultYoungest.name, "y tiene", resultYoungest.age, "años");
+ 
+// FORMA PROPUESTA EN EJERCICIOS RESUELTOS: INICIALIZA DOS VARIABLES (EL PRIMER ELEMENTO DEL ARRAY -ÍNDICE) Y LAS USA DESPUÉS PARA COMPARAR LOS ELEMENTOS DEL ARRAY DE FORMA QUE SI EL .age ES MENOR, DEVUELVE ESE ELEMENTO DEL ARRAY Y EL ELEMENTO .name  QUE LE CORRESPONDA
+
+/* const theYoungest = () => {
+   let youngestAge = adalabers[0].age;
+   let youngestName = adalabers[0].name;
+
+   for (const adalaber of adalabers) {
+     if (adalaber.age < youngestAge) {
+       youngestAge = adalaber.age;
+       youngestName = adalaber.name;
+     }
+   }
+
+   return youngestName;
+ };
+ console.log(theYoungest()); */
+
+ const countDesigners= () => {
+    let accDesigner= 0;
+
+    for (const adalaber of adalabers) {
+        if (adalaber.profession === "diseñadora") {
+        accDesigner++;
+        }
+    }
+    return accDesigner
+};
+
+ console.log("En esta promoción hay", countDesigners(), "diseñadoras");
+
+//  EJERCICIO 5
+
+const alarmContainer = document.querySelector('.alarm');
+const alarmBtn = document.querySelectorAll('.alarm-button');
+
+const handleClickAlarm = () => {
+    alarmContainer.classList.toggle("alarmOn");
+}
+
+for (const button of alarmBtn) {
+    button.addEventListener("click", handleClickAlarm)
+};
+
+console.log("*********************************");
+
+
+//  EJERCICIO 6
+const items = [
+  'Ada',
+  1815,
+  ['Informática', 'Matemática', 'Escritora'],
+  {
+    mother: 'Anna Isabella',
+    father: 'Lord Byron',
+  },
+];
+
+for (let id=0; id<items.length; id++){
+    const element= items[id];
+    const elementType = typeof(element);
+
+ console.log('El dato', element, 'está en la posición', id, 'y es de tipo', elementType);
+}

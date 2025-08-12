@@ -21,3 +21,20 @@
     padding: 10px;
     font-weight: 900;
 }
+/* EJERCICIO 4 */
+/* EJERCICIO 5 */
+
+.alarm {
+    background-color: white;
+}
+
+.alarmOn {
+    background-color: red;
+}
+
+.alarm-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
