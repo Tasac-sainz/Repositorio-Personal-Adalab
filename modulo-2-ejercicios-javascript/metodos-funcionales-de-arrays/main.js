@@ -65,7 +65,7 @@ const users2 = [
 ];
 
 const accessApprobe= users2.filter (users2 => users2.pin %2 === 0)
-console.log("las constraseñaas con acceso aprobado son", accessApprobe);
+console.log("Las constraseñas con acceso aprobado son", accessApprobe);
 
 for (const printAccessAprobe of accessApprobe){
     console.log(printAccessAprobe.name, "tiene acceso porque su contraseña es", printAccessAprobe.pin);
@@ -75,5 +75,14 @@ for (const printAccessAprobe of accessApprobe){
 
 
 // EJERCICIO 7 lo hacemos sobre el array user2
+const issue= users2.find (userIssue => userIssue.pin === 5232);
+console.log(issue);
+console.log ("La usuaria que presenta la incidencia es", issue.name)
+console.log("La usuaria con incidencia se quiere dar de baja, la borramos del array users2");
 
+const isssueId = users2.findIndex (userIssue => userIssue.pin === 5232);
+console.log("El índice de la usuaria que se quiere dar de baja es", isssueId, "así que la borramos del array de users2");
+
+users2.splice(3, 1);
+console.log(users2);
 
