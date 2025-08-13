@@ -35,3 +35,45 @@ console.log (welcomePremium)
 
 const premiumUsers= users.filter (user => user.isPremium)
 console.log (premiumUsers)
+
+
+for (const printPremium of premiumUsers) {
+    console.log(printPremium.name,"es usuaria premium");
+};
+
+// EJERCICIO 5
+
+console.log("Sólo los pares");
+const pins = [2389, 2384, 2837, 5232, 8998];
+
+const pairPin= pins.filter (pin => pin %2 === 0);
+console.log(pairPin);
+
+for ( const pinPair of pairPin) {
+    console.log (pinPair)
+};
+
+// EJERCICIO 6
+console.log("Sólo pueden entrar usuarias con contraseña par");
+
+const users2 = [
+  { name: "María", isPremium: false, pin: 2389 },
+  { name: "Lucía", isPremium: true, pin: 2384 },
+  { name: "Susana", isPremium: true, pin: 2837 },
+  { name: "Rocío", isPremium: false, pin: 5232 },
+  { name: "Inmaculada", isPremium: false, pin: 8998 },
+];
+
+const accessApprobe= users2.filter (users2 => users2.pin %2 === 0)
+console.log("las constraseñaas con acceso aprobado son", accessApprobe);
+
+for (const printAccessAprobe of accessApprobe){
+    console.log(printAccessAprobe.name, "tiene acceso porque su contraseña es", printAccessAprobe.pin);
+    const paragraphEjercicio6 = document.querySelector('.ejercicio-6');
+    paragraphEjercicio6.innerHTML += `${printAccessAprobe.name} tiene acceso porque su contraseña es ${printAccessAprobe.pin} <br>`
+};
+
+
+// EJERCICIO 7 lo hacemos sobre el array user2
+
+
