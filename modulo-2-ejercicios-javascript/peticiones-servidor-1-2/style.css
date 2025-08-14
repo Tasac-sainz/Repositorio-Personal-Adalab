@@ -1,0 +1,20 @@
+* {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    list-style: none;
+}
+
+.character {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    font-weight: 800;
+}
+.search-button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(124, 118, 131);
+    font-weight: 900;
+}
