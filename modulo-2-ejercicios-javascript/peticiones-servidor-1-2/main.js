@@ -1,6 +1,7 @@
 'use strict'
 console.log("Ejercicios de Peticiones al Servidor (I y II)");
 
+
 /* EJERCICIO 1 */
 
 fetch ("https://api.rand.fun/number/integer?min=0&max=200")
@@ -61,3 +62,30 @@ searchBtn.addEventListener ("click", () =>{
 
 })
 });
+
+/* EJERCICIO LOCAL STORAGE */
+
+const inputName=document.querySelector('.name-in');
+const lastnameIn=document.querySelector('.lastname-in');
+const paragraphResult=document.querySelector('.result-storage');
+
+const getData= () => {
+	const userData = {
+		name: inputName.value,
+		lastname: lastnameIn.value,
+			}
+	paragraphResult.textContent = `${userData.name} ${userData.lastname}`;
+	localStorage.setItem ("usuario", JSON.stringify(userData));
+	};
+
+inputName.addEventListener("keyup", getData);
+lastnameIn.addEventListener("keyup", getData);
+
+const saveData= localStorage.getItem("usuario");
+if (saveData) {
+	const dataObj= JSON.parse(saveData);
+	inputName.value= dataObj.name;
+	lastnameIn.value= dataObj.lastname;
+	
+	paragraphResult.textContent=`${dataObj.name} ${dataObj.lastname}`
+};
