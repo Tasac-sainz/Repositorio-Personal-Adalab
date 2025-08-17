@@ -18,3 +18,13 @@
     background-color: rgb(124, 118, 131);
     font-weight: 900;
 }
+
+.radio-default {
+    background-color: aliceblue;
+    color: black;
+}
+
+.radio-dark {
+    background-color: black;
+    color: white;
+}

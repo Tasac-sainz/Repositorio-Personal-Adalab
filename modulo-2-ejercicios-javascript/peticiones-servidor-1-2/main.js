@@ -89,3 +89,17 @@ if (saveData) {
 	
 	paragraphResult.textContent=`${dataObj.name} ${dataObj.lastname}`
 };
+
+/* EJERCICIO MI TEMA PREFERIDO */
+const handleChangeTheme= (event) => {
+	const chosenTheme= event.currentTarget.value;
+	document.body.classList.remove("default-theme", "dark-theme");
+
+	if (chosenTheme === "dark") {
+		document.body.classList.add ("radio-dark")
+	} else {
+		document.body.classList.remove ("radio-dark")
+	}
+};
+document.querySelectorAll('.theme-radio').forEach(radio => radio.addEventListener('change', handleChangeTheme));
+
