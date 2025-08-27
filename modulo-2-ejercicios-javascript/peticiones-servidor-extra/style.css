@@ -9,8 +9,13 @@
 .button {
     padding: 5px;
     border-radius: 7px;
-    background-color: cadetblue;
+    background-color: rgb(109, 183, 186);
     color:black;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 40px 0;
 }
 .search-number {
     padding: 5px;
@@ -22,4 +27,25 @@
 .imgdog {
     max-width: 400px;
     max-height: 300px;
+}
+
+.input-git {
+    padding: 5px;
+}
+
+.other-husky_btn {
+    display: block;
+}
+.exercice-husky {
+    display: inline-block;
+}
+.exercice-git {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ten-images img {
+    max-width: 140px;
+    max-height: 140px;
+    height: auto;
 }
