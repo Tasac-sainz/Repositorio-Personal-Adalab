@@ -1,0 +1,56 @@
+@use '../core/variables' as vars;
+
+.bath {
+    color: vars.$colorText;
+
+        .bathText {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background-color: vars.$color-secondary;
+                .bathTitle {
+                    font-weight: 600;
+                    font-size: 24px;
+                        }
+                .bathDescription {
+                    font-size: 14px;
+                    margin-bottom: 30px;                    
+                        }
+                .button {
+                    margin-bottom: 40px;
+                        }
+                } 
+        .bathImage {
+            height: 400px;
+            background-image: url(/images/creando-espacios.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+                }                                     
+    }
+
+@media screen and (min-width: 1728px) {
+    .bath {
+        display: flex;
+        flex-direction: row;
+       
+            .bathText {
+                width: 50vw;
+                display: flex;
+                align-items:flex-start;
+                padding-left: 150px;
+                padding-right: 350px;
+                    
+                    .bathDescription{
+                        text-align: left;
+                            }
+                    }
+            .bathImage {
+                width:50vw;
+                    }
+         }
+}

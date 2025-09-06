@@ -1,0 +1,40 @@
+header {
+    background-color: transparent;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+                        
+        .burguer {
+            width: 24px;
+            height: 24px;
+            margin: 50px;
+                }
+        .header_logo{
+            width: 100%;
+            text-align: center;
+              }
+        .nav-links {
+            display: none;
+                }
+        }
+
+@media screen and (min-width: 1024px)
+        {
+        header {
+        .header_logo{
+            text-align: center;
+            margin-left: auto;
+               }
+        .nav-links {
+            display: flex;
+            margin: 70px;
+            margin-right: auto;
+            margin-left: 200px;
+                }  
+        .burguer {
+            display:none;
+                }
+        }
+    }

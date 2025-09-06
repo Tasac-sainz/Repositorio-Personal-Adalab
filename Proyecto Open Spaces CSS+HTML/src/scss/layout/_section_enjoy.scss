@@ -1,0 +1,71 @@
+@use '../core/variables' as vars;
+
+.page__main 
+  { font-family: vars.$fontText;
+            
+    .section-enjoy {
+        font-size: 24px;
+        background-image: url("../images/header.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 62px;
+        gap: 35px;
+        
+          .enjoy {
+             width: 100%;
+             text-align: center;
+                .enjoy-text {
+                   color: vars.$colorText;
+                   margin-top: 70px;  
+                       }
+                  }
+            .buttonEnjoy {
+              width: 100%;
+              text-align: center;
+              margin: 0;
+                }
+        }
+  }
+
+
+@media screen and (min-width: 900px) {
+    .enjoy {
+      width: 100%;
+      text-align: left;
+      justify-items: center;
+      margin-left: 100px;
+      margin-top: 40px;
+          }
+    .enjoy-text {
+        width: 400px;
+        text-align: left;
+          } 
+    .buttonEnjoy {
+      width: 100%;
+      text-align: left;
+         }
+  }
+
+
+@media screen and (min-width: 1728px) 
+{
+    .enjoy{
+      justify-items: left;
+        }
+
+  .page__main{
+    .section-enjoy{
+      .buttonEnjoy{
+            width: 100%;
+            text-align: left;
+            margin-left: 100px;
+                  }
+        }
+     }         
+   }
+  

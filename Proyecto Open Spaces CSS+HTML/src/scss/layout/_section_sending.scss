@@ -1,0 +1,25 @@
+@use '../core/variables' as vars;
+
+.sending {
+    background-color: #FF975A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+        .sendingTitle {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 10px;
+                }
+        .sendingSubtitle {
+            font-size: 14px;
+                }
+        .imageSending {
+            width: 120px;
+            height: 120px;
+            margin-top: 50px;
+                }
+        }
